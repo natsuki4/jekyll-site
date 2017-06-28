@@ -1,9 +1,13 @@
+---
+# この前後3行がないとJekyllがinclude命令等を実行してくれるので消さないように！
+---
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title></title>
+  <title>このページについて</title>
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -20,49 +24,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Project Page</a>
-    </div>
-  </div><!-- /.container-fluid -->
-</nav>
-
+{% include header.html %}
 <div class="container">
-  <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
-
-</div>
-<div class="container">
-  
-  
-</div>
-<div class="container footer">
-  <hr>
-<ul class="list-inline">
-  <li><a href="/">トップページ</a></li>
-  <li><a href="/blog.html">ブログサンプル</a></li>
-</ul>
-
+  <h1>このページについて</h1>
+  <p>
+    Jekyllの動作練習
+  </p>
 </div>
 </body>
 </html>
